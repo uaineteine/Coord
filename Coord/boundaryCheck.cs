@@ -14,11 +14,17 @@ namespace Uaine.Coord
                 {
                     return true;
                 }
-                else
-                    return false;
             }
-            else
-                return false;
+            //else
+            return false;
+        }
+        public static bool Check(coord p, int w, int h)
+        {
+            return Check(p, new coord(w, h));
+        }
+        public static bool Check(int px, int py, coord size)
+        {
+            return Check(new coord(px, py), size);
         }
         public static bool Check(int x, int y, int w, int h)
         {
