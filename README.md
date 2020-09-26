@@ -4,9 +4,9 @@ A C# .NET standard project for co-ordinate classes with additional functions
 
 ## Getting Started
 
-Add project to solution with reference
+Add project to solution with reference to get started
 
-## Version 1.0
+## Version 1.1
 
 See the [changelog](changelog.txt) for details.
 

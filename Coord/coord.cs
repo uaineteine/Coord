@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coord
+namespace Uaine.Coord
 {
     public class coord
     {
