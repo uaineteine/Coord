@@ -6,7 +6,7 @@ A C# .NET standard project for co-ordinate classes with additional functions
 
 Add project to solution with reference to get started
 
-## Version 1.1
+## Version 1.2
 
 See the [changelog](changelog.txt) for details.
 
