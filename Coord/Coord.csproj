@@ -10,6 +10,7 @@
     <AssemblyName>Uaine.Coord</AssemblyName>
     <Version>1.2.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>A C# .NET standard project for co-ordinate classes with additional functions</Description>
   </PropertyGroup>
 
 </Project>
