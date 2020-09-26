@@ -5,6 +5,9 @@
     <Authors>Daniel Stamer-Squair</Authors>
     <Company>Daniel Stamer-Squair</Company>
     <SignAssembly>false</SignAssembly>
+    <Copyright>Copyright © 2020 Daniel Stamer-Squair</Copyright>
+    <RootNamespace>Uaine.Coord</RootNamespace>
+    <AssemblyName>Uaine.Coord</AssemblyName>
   </PropertyGroup>
 
 </Project>
