@@ -11,6 +11,17 @@ namespace Uaine.Coord
             x = xi;
             y = yi;
         }
+        public coord(coord b)
+        {
+            x = b.x;
+            y = b.y;
+        }
+        public coord(int xandy)
+        {
+            x = xandy;
+            y = xandy;
+        }
+
         public int x;
         public int y;
 
@@ -40,6 +51,12 @@ namespace Uaine.Coord
             return x * y;
         }
 
+        public double Norm()
+        {
+            fcoord a = new fcoord(this);
+            return a.Norm();
+        }
+
         public fcoord toFloat()
         {
             return new fcoord(this);
@@ -49,6 +66,13 @@ namespace Uaine.Coord
         {
             return new fcoord((float)x / (float)b.x, (float)y / (float)b.y);
         }
+
+        /*
+        public void rationalise()
+        {
+            
+        }
+        */
 
         public static coord operator +(coord a, coord b)
             => new coord(a.x + b.x, a.y + b.y);
@@ -65,10 +89,15 @@ namespace Uaine.Coord
         public static coord operator /(coord a, coord b)
             => new coord(a.x / b.x, a.y / b.y);
 
+        public static coord operator /(coord a, int b)
+            => new coord(a.x / b, a.y / b);
+
         public static coord operator *(coord a, coord b)
             => new coord(a.x * b.x, a.y * b.y);
 
         public static coord operator *(coord a, int b)
             => new coord(a.x * b, a.y * b);
+
+        public static coord zero = new coord(0, 0);
     }
 }

@@ -16,6 +16,11 @@ namespace Uaine.Coord
             x = p.x;
             y = p.y;
         }
+        public fcoord(float xandy)
+        {
+            x = xandy;
+            y = xandy;
+        }
         public float x;
         public float y;
 
@@ -41,6 +46,18 @@ namespace Uaine.Coord
                 else
                     return 3;
             }
+        }
+
+        public float Mag()
+        {
+            return x * y;
+        }
+
+        public double Norm()
+        {
+            double xd = (double)x;
+            double yd = (double)y;
+            return Math.Sqrt(xd*xd + yd*yd);
         }
 
         public static fcoord operator +(fcoord a, fcoord b)
