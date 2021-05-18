@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Uaine.Coord
 {
@@ -44,6 +42,12 @@ namespace Uaine.Coord
                 else
                     return 3;
             }
+        }
+
+        public double angle()
+        {
+            float v = x/y;
+            return Math.Atan(v);
         }
 
         public int Mag()
@@ -98,6 +102,7 @@ namespace Uaine.Coord
         public static coord operator *(coord a, int b)
             => new coord(a.x * b, a.y * b);
 
-        public static coord zero = new coord(0, 0);
+        public readonly coord zero = new coord(0, 0);
+        public readonly coord one = new coord(1, 1); //value of 1,1
     }
 }

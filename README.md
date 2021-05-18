@@ -6,7 +6,7 @@ A C# .NET standard project for co-ordinate classes with additional functions
 
 Add source project to solution with reference to get started or install via [NuGet](https://www.nuget.org/packages/Uaine.Coord/)
 
-## Version 1.3
+## Version 1.3.1
 
 See the [changelog](changelog.txt) for details.
 
