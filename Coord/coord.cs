@@ -102,7 +102,7 @@ namespace Uaine.Coord
         public static coord operator *(coord a, int b)
             => new coord(a.x * b, a.y * b);
 
-        public readonly coord zero = new coord(0, 0);
-        public readonly coord one = new coord(1, 1); //value of 1,1
+        public static readonly coord zero = new coord(0, 0);
+        public static readonly coord one = new coord(1, 1); //value of 1,1
     }
 }

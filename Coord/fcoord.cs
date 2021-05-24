@@ -88,7 +88,7 @@ namespace Uaine.Coord
         public static fcoord operator /(fcoord a, fcoord b)
             => new fcoord(a.x / b.x, a.y / b.y);
 
-        public readonly fcoord zero = new fcoord(0, 0);
-        public readonly fcoord one = new fcoord(1, 1); //value of 1,1
+        public static readonly fcoord zero = new fcoord(0, 0);
+        public static readonly fcoord one = new fcoord(1, 1); //value of 1,1
     }
 }
