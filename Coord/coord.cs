@@ -61,6 +61,12 @@ namespace Uaine.Coord
             return a.Norm();
         }
 
+        public double DistanceFrom(coord a)
+        {
+            coord d = this - a;
+            return d.Norm();
+        }
+
         public fcoord toFloat()
         {
             return new fcoord(this);

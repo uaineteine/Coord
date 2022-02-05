@@ -64,6 +64,11 @@ namespace Uaine.Coord
             return Math.Sqrt(xd*xd + yd*yd);
         }
 
+        public double DistanceFrom(fcoord a)
+        {
+            fcoord d = this - a;
+            return d.Norm();
+        }
         public static fcoord operator +(fcoord a, fcoord b)
             => new fcoord(a.x + b.x, a.y + b.y);
 

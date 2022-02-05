@@ -1,3 +1,6 @@
+--1.4--
+Distance norm operator between 2 co-ordinates
+
 --1.3.2--
 Fix of readonly values to be static
 
