@@ -54,11 +54,8 @@ namespace Uaine.Coord
             coord d = this - a;
             return d.Norm();
         }
-        public static fcoord operator +(coord a, coord b)
-            => new fcoord(a.x + b.x, a.y + b.y);
-
         public static coord operator +(coord a, coord b)
-            => a + new coord(b);
+            => new coord(a.x + b.x, a.y + b.y);
 
         public static coord operator -(coord a)
             => new coord(-a.x, - a.y);
