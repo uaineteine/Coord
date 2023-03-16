@@ -2,33 +2,23 @@
 {
     public class Coordinate<T>
     {
-        private Ordinate<T> x;
-        private Ordinate<T> y;
-        private Ordinate<T> z;
+        private readonly Ordinate<T>[] coordinates;
 
-        public Coordinate(Ordinate<T> x, Ordinate<T> y, Ordinate<T> z)
+        public Coordinate(params Ordinate<T>[] coordinates)
         {
-            this.x = x;
-            this.y = y;
-            this.z = z;
+            this.coordinates = coordinates;
         }
 
-        public Ordinate<T> X
+        public int Length
         {
-            get { return x; }
-            set { x = value; }
+            get { return coordinates.Length; }
         }
 
-        public Ordinate<T> Y
+        public Ordinate<T> this[int index]
         {
-            get { return y; }
-            set { y = value; }
-        }
-
-        public Ordinate<T> Z
-        {
-            get { return z; }
-            set { z = value; }
+            get { return coordinates[index]; }
+            set { coordinates[index] = value; }
         }
     }
+
 }
