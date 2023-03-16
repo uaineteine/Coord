@@ -1,18 +1,40 @@
 ﻿namespace Uaine.Coord
 {
-    public class Ordinate<T>
+    public class Ordinate<T> where T : struct
     {
-        private T value;
+        public T Value { get; set; }
 
         public Ordinate(T value)
         {
-            this.value = value;
+            Value = value;
         }
-        public T Value
+
+        public static Ordinate<T> operator +(Ordinate<T> a, Ordinate<T> b)
         {
-            get { return value; }
-            set { this.value = value; }
+            dynamic x = a.Value;
+            dynamic y = b.Value;
+            return new Ordinate<T>(x + y);
+        }
+
+        public static Ordinate<T> operator -(Ordinate<T> a, Ordinate<T> b)
+        {
+            dynamic x = a.Value;
+            dynamic y = b.Value;
+            return new Ordinate<T>(x - y);
+        }
+
+        public static Ordinate<T> operator *(Ordinate<T> a, Ordinate<T> b)
+        {
+            dynamic x = a.Value;
+            dynamic y = b.Value;
+            return new Ordinate<T>(x * y);
+        }
+
+        public static Ordinate<T> operator /(Ordinate<T> a, Ordinate<T> b)
+        {
+            float x = (float)a.Value;
+            float y = b.Value;
+            return new Ordinate<T>(x / y);
         }
     }
-
 }

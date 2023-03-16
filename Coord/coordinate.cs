@@ -1,6 +1,6 @@
 ﻿namespace Uaine.Coord
 {
-    public class Coordinate<T>
+    public class Coordinate<T> where T : struct
     {
         private readonly Ordinate<T>[] coordinates;
 
