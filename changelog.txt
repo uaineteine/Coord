@@ -1,3 +1,8 @@
+--2.0-
+Created ordinate class
+Making generic float type
+Consolidate the quadrant expression
+
 --1.4--
 Distance norm operator between 2 co-ordinates
 
