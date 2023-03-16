@@ -23,27 +23,12 @@ namespace Uaine.Coord
         public float y;
 
         //0 is origin, 1 to 4 are coord quadrants, expecting something not on an axis
-        
-        
         public int quadrant()
         {
             //return quad coord is in
-            if (x == 0 & y == 0)
-                return 0;
-            else if (x > 0)
-            {
-                if (y >= 0)
-                    return 1;
-                else
-                    return 4;
-            }
-            else
-            {
-                if (y >= 0)
-                    return 2;
-                else
-                    return 3;
-            }
+            if (x == 0 && y == 0) return 0;
+            if (x > 0) return (y >= 0) ? 1 : 4;
+            return (y >= 0) ? 2 : 3;
         }
 
         public double angle()
